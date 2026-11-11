@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#04070d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Dragon Fight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="brand"><i class="logo"></i><b>DRAGON<span>//</span>FIGHT</b></div>
+    <div class="chips">
+      <span class="chip"><i class="dot"></i>SYS ONLINE</span>
+      <button id="fs" type="button" aria-label="Tela cheia" title="Tela cheia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="stage">
+    <div id="screen">
+      <canvas id="cv" width="480" height="270"></canvas>
+      <div class="crt"></div>
+      <i class="br tl"></i><i class="br tr"></i><i class="br bl"></i><i class="br bb"></i>
+    </div>
+  </main>
+
+  <nav id="c" aria-label="Controles">
+    <div class="g l">
+      <button class="k" type="button" data-k="ArrowLeft" aria-label="Esquerda"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="k" type="button" data-k="ArrowRight" aria-label="Direita"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="g r">
+      <button class="k hold" type="button" data-k="ArrowDown"><svg viewBox="0 0 24 24"><path d="M12 4v13M6 12l6 6 6-6"/></svg><span>SEGURAR</span></button>
+      <button class="k jump" type="button" data-k="ArrowUp"><svg viewBox="0 0 24 24"><path d="M12 20V7M6 12l6-6 6 6"/></svg><span>PULAR</span></button>
+      <button class="k atk" type="button" data-k="Space"><svg viewBox="0 0 24 24"><path d="M5 19L18 6M14 4h6v6M5 19l-1 1M8 16l-3 3"/></svg><span>ATACAR</span></button>
+    </div>
+  </nav>
+
+  <aside id="kb" aria-label="Teclas">
+    <span><kbd>←</kbd><kbd>→</kbd> andar</span>
+    <span><kbd>↑</kbd> pular</span>
+    <span><kbd>↓</kbd> segurar</span>
+    <span><kbd>ESPAÇO</kbd> atacar</span>
+    <span><kbd>ENTER</kbd> iniciar</span>
+  </aside>
+</div>
+<script src="script.js"></script></body></html>
